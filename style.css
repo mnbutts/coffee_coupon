@@ -23,7 +23,9 @@ div.module {
 .arrow-right {
 	position: absolute; 
 	top: 50%;
-	transform: translate( -50%, -50%);
+	top/*\**/: 9px\9;
+	transform: translate( -50%, -50%); /*found hack from browserhacks.com */
+	transform/*\**/: none\9; /*found hack from browserhacks.com */
 	right: 10px;
 	width: 0; 
   	height: 0; 
@@ -91,4 +93,18 @@ h1 {
 	  	border-left: 12px solid #E95134;
    }
 
-  }
+}
+/*<!--[if lte IE 8]>
+	<style type='text/css'>
+		.arrow-right {
+	   		position: absolute; 
+			top: 5px;
+			right: 10px;
+			width: 0; 
+		  	height: 0; 
+		 	border-top: 12px solid transparent;
+		  	border-bottom: 12px solid transparent; 
+		  	border-left: 12px solid #E95134;
+   		}
+	</style>
+<![endif]-->*/
