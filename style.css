@@ -1,0 +1,94 @@
+@charset "UTF-8";
+/* CSS Document */
+
+div.module {
+	position: absolute;
+	top: 175px;
+	right: 36px;
+}
+.module {
+	background-color: #F6485F;
+	width: 215px;
+}
+.coupon_button {
+	background-color: #FFC5C1;
+	border-radius: 10px;
+	text-align: center;
+	position: relative;
+	margin: auto;
+	width: 70%;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+.arrow-right {
+	position: absolute; 
+	top: 50%;
+	transform: translate( -50%, -50%);
+	right: 10px;
+	width: 0; 
+  	height: 0; 
+ 	border-top: 12px solid transparent;
+  	border-bottom: 12px solid transparent; 
+  	border-left: 12px solid #E95134;
+	/* used arrow code from https://css-tricks.com/snippets/css/comments-in-css/ */
+}
+body {
+	background-image: url(image.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	position: relative;
+	height: 100%;
+	font-size: 16px;
+}
+html {
+	margin: auto;
+	width: 648px;
+	height: 394px;
+}
+h1,
+.tagline {
+	text-align: center;
+}
+h1,
+p {
+	color: #FFF;
+	margin: 0;
+}
+h1 {
+	font-size: 32px;
+}
+.tagline {
+	font-size: 320%;
+	padding-top: 3px;
+	font-weight: bold; 
+}
+.module {
+	font-family: Arial, sans-serif;
+	line-height: 1;
+}
+.module_description{
+	font-weight: 500;
+	font-size: 22px;
+	padding-bottom: 10px;
+}
+.module_content {
+	font-weight: 200;
+	font-size: 14px;
+	padding-bottom: 10px;
+	color: #E3D9D9;
+	margin-bottom: 10px;
+}
+@-moz-document url-prefix() {
+
+   .arrow-right {
+   		position: absolute; 
+		top: 9px;
+		right: 10px;
+		width: 0; 
+	  	height: 0; 
+	 	border-top: 12px solid transparent;
+	  	border-bottom: 12px solid transparent; 
+	  	border-left: 12px solid #E95134;
+   }
+
+  }
